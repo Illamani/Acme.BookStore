@@ -11,6 +11,8 @@ namespace Acme.BookStore.Authors
 {
     [Authorize(BookStorePermissions.Authors.Default)]
     public class AuthorAppService : BookStoreAppService, IAuthorAppService
+        //Todos los servicios son antes clases,
+        //Toma valores o atributos de esos dos servicios
     {
         private readonly IAuthorRepository _authorRepository;
         private readonly AuthorManager _authorManager;
