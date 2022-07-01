@@ -1,13 +1,20 @@
 <div class="card">
   <div class="card-header">
     <div class="row">
+      <!-- Esta clase por lo poco redirecciona el new books -->
+
       <div class="col col-md-6">
+        <!-- Esta clase por lo poco redirecciona el new books -->
+
         <h5 class="card-title">
+          <!-- Esta clase le pone el titulo a la tabla, que la saca de la interpolacion -->
           {{ '::Menu:Books' | abpLocalization }}
         </h5>
       </div>
       <div class="text-end col col-md-6">
+        <!-- Define un estilo al boton de crear libros -->
         <div class="text-lg-end pt-2">
+          <!-- Minimo cambio en el boton -->
           <button
             *abpPermission="'BookStore.Books.Create'"
             id="create"
@@ -15,7 +22,8 @@
             type="button"
             (click)="createBook()"
           >
-            <i class="fa fa-plus mr-1"></i>
+            <i class="fa fa-plus mr-1"></i
+            ><!-- Simbolo de mas -->
             <span>{{ '::NewBook' | abpLocalization }}</span>
           </button>
         </div>

@@ -13,6 +13,7 @@ import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { APP_ROUTE_PROVIDER } from './route.provider';
+import { ButtonModule } from 'primeng/button';
 
 @NgModule({
   imports: [
@@ -29,6 +30,7 @@ import { APP_ROUTE_PROVIDER } from './route.provider';
     TenantManagementConfigModule.forRoot(),
     SettingManagementConfigModule.forRoot(),
     ThemeBasicModule.forRoot(),
+    ButtonModule,
   ],
   declarations: [AppComponent],
   providers: [APP_ROUTE_PROVIDER],
